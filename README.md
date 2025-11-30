@@ -1,3 +1,4 @@
+
 # 🇪🇬 Egyptian Used Cars Full Project: Data Collection to Price Prediction
 
 ## 🚀 Project Overview
@@ -15,23 +16,36 @@ This project provides a clear, data-driven understanding of the Egyptian used ca
 The project was executed in four main steps:
 
 ### Phase 1: Web Scraping
+📁 Project Files:
+[Data Analysis](./Data%20Analysis/)
+
+
 We collected data from the two most important used car websites in Egypt: **Hatla2ee** and **ContactCars**.
-* Over **8,000 rows** were scraped from Hatla2ee.
-* Over **3,000 rows** were scraped from ContactCars.
+* Over **8,000 rows** were scraped from [Hatla2ee](https://eg.hatla2ee.com/).
+* Over **3,000 rows** were scraped from [ContactCars](https://www.contactcars.com/ar).
 
 ### Phase 2: Data Cleaning
+📁 Project Files:
+[Data cleaning](./Data%20cleaning/)
+
 The focus was on unifying the format to merge the two datasets. Key steps included:
 * **Removing Duplicates:** Deleting repeated ads for accuracy.
 * **Standardizing Prices:** Converting text formats (e.g., "1.5 Million") into numeric values.
 * **Handling Outliers:** Removing unrealistic values in prices or kilometers.
 
 ### Phase 3: EDA & Visualization
+📁 Project Files:
+[EDA](./Data%20Analysis/)  , [Tableau Visualization](./Tableau%20Visualization/)
+
 We extracted insights and visualized market trends using **Tableau**. The dashboards highlight:
 * Best-selling cars in Egypt.
 * Price distribution across different Governorates.
 * Depreciation rates (drop in price over time).
 
 ### Phase 4: Machine Learning Model
+📁 Project Files:
+[ML Deployment](./ML%20Deployment/)
+
 An ML model was built to predict car prices based on features like Make, Model, Transmission, and Kilometers.
 * **Preprocessing:** Applied feature scaling, encoding, and feature engineering, and dropped unnecessary columns.
 * **Algorithms Used:** XGBoost and Random Forest Regressor.
@@ -58,18 +72,15 @@ The import restriction, while affecting the market, had positive economic outcom
 
 | Category | Tools & Libraries |
 | :--- | :--- |
-| **Data Collection/Cleaning** | Python (BeautifulSoup, Selenium, Pandas, NumPy) |
+| **Data Collection/Cleaning** | Python (BeautifulSoup, Selenium, Pandas, NumPy), SQL|
 | **Visualization** | Tableau Public |
 | **Machine Learning** | Scikit-Learn, XGBoost |
 
 ## 👥 Team Members
 
-* Abdelrhman Mohamed Yakout (leader)
-* Ziad Moursy Oun
-* Ahmed Mohmed Hussien
-* Abdelrhman Islam Omar
-* Ziad Elgendy
-* Ahmed Refaay
-* Abdelrhman Islam
-* Ahmed Refaay
-* Ziad Elgendy
+* **Abdelrhman Mohamed Yakout (leader)** 
+* `Ziad Moursy Oun`
+* `Ahmed Mohmed Hussien`
+* `Abdelrhman Eslam Omar`
+* `Ziad Elgendy`
+* `Ahmed Refaay`
