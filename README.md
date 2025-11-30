@@ -11,6 +11,14 @@ To build a complete system that collects real market data, analyzes it, and crea
 **The Value:**
 This project provides a clear, data-driven understanding of the Egyptian used car market, solving the problem of unclear pricing.
 
+📦 Project Architecture
+|── Web Scraping
+|── Data Cleaning
+|── EDA & Visualization
+|── ML Model Training
+|── Deployment (Streamlit App)
+
+
 ## ⚙️ Workflow and Detailed Phases
 
 The project was executed in four main steps:
@@ -32,6 +40,7 @@ The focus was on unifying the format to merge the two datasets. Key steps includ
 * **Removing Duplicates:** Deleting repeated ads for accuracy.
 * **Standardizing Prices:** Converting text formats (e.g., "1.5 Million") into numeric values.
 * **Handling Outliers:** Removing unrealistic values in prices or kilometers.
+* **Fixing inconsistent text labels**
 
 ### Phase 3: EDA & Visualization
 📁 Project Files:
@@ -50,6 +59,13 @@ An ML model was built to predict car prices based on features like Make, Model, 
 * **Preprocessing:** Applied feature scaling, encoding, and feature engineering, and dropped unnecessary columns.
 * **Algorithms Used:** XGBoost and Random Forest Regressor.
 * **Evaluation:** The model achieved high accuracy, evaluated using R2 Score, MAE, and RMSE.
+
+### Model Performance
+| Model         | MAE        | RMSE       | R²        |
+| ------------- | ---------- | ---------- | --------- |
+| Random Forest | ~0.033     | ~0.056     | `~0.89 `    |
+| XGBoost       | **~0.029** | **~0.052** | **`~0.91`** |
+
 
 ## 📈 Results and Market Insights
 
